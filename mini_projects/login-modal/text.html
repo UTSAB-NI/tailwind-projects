@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User|login</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    sans: ["Mulish", "sans-serif"],
+                    mono: ["Rokkitt", "monospace"],
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <!-- Global Container -->
+    <div class="p-6 flex items-center justify-center min-h-screen">
+        <!-- Card Container -->
+        <div class="relative flex flex-col space-y-10 rounded-2xl md:flex-row md:space-y-0  m-6 bg-white shadow-2xl ">
+            <!-- Left side -->
+            <div class="p-6 md:p-26">
+                <h2 class="font-mono mb-5 font-bold text-4xl">Log In</h2>
+                <p class="max-w-sm mb-12 fonts-sans font-light font-gray-600">
+                    Log in to your account to upload or download pictures, videos or
+                    music.
+                </p>
+                <input type="text" class="border border-gray-300 w-full p-6 rounded-2xl placeholder:fonts-sans"
+                    placeholder="Enter your email address" />
+                <!-- Next and forgot password -->
+
+                <div class="flex flex-col items-center justify-between mt-6 space-y-6 md:flex-row md:space-y-0 md:space-x-4 p-4">
+                    <div class="font-thin text-cyan-700">Forgot Password</div>
+                    <button
+                        class="px-10 py-6 w-full md:p-4 shadow-cyan-200 md:w-auto py-6 bg-blue-500 font-bold text-white hover:border-none hover:scale-105 rounded-2xl mr-2 md:w-auto">
+                        Next 
+                    </button>
+                </div>
+                <!-- Border -->
+                <div class="mt-9 border border border-b-gray-300"></div>
+                <p class="opacity-40 mb-3 text-center mt-2 font-light text-sm">
+                    or log in with
+                </p>
+
+                <!-- Button Container -->
+                <div class="flex flex-col space-y-6 md:space-y-0 md:flex-row md:space-x-8">
+                    <button
+                        class="flex justify-center items-center border w-full border-slate-300 rounded-xl p-6 space-x-2 hover:shadow-lg hover:scale-105 hover:-translate-y-0">
+                        <img src="images/facebook.png" alt="" class="w-9" />
+                        <span class="font-thin">Facebook</span>
+                    </button>
+
+                    <button
+                        class="flex justify-center items-center border w-full border-slate-300 rounded-xl p-6 space-x-2 hover:shadow-lg hover:scale-105 hover:-translate-y-0">
+                        <img src="images/google.png" alt="" class="w-9" />
+                        <span class="font-thin">Google</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <img src="images/image.jpg" alt="" class="w-[450px] hidden md:block" />
+        </div>
+    </div>
+</body>
+
+</html>
